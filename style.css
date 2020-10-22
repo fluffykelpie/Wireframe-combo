@@ -96,13 +96,17 @@ main .video-container .images-video .image-two {
   background: #97acaa;
 }
 main .container-about {
-  height: 100vh;
+  height: 50vh;
   display: grid;
   grid-gap: 5px;
   grid-template: auto/repeat(2, 1fr);
 }
 main .container-about .who-are-we {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .container-about .who-are-we h3 {
   text-transform: uppercase;
@@ -110,7 +114,7 @@ main .container-about .who-are-we h3 {
   padding: 1.5rem;
 }
 main .container-about .who-are-we .divider {
-  width: 8rem;
+  width: 33rem;
   height: 0.4rem;
   background: #7C9996;
   display: inline-block;
@@ -118,10 +122,104 @@ main .container-about .who-are-we .divider {
   margin-left: 1rem;
 }
 main .container-about .who-are-we #text-intro {
-  padding: 1rem;
+  width: 70%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template: repeat(1, 1fr)/repeat(1, 1fr);
+  padding-top: 1rem;
 }
-main .container-about .who-are-we .picture-about {
+main .container-about .who-are-we .btn-bottom {
+  border: 2px solid #97acaa;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 10px 20px;
+  color: black;
+  width: 150px;
+}
+main .container-about .picture-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container-about .picture-about img {
+  width: 85%;
+  height: auto;
+}
+main .container-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .container-courses h2 {
+  padding: 2rem;
+  color: #E6D7D1;
+}
+main .container-courses .mosaic {
+  display: grid;
+  grid-gap: 2px;
+  grid-template: repeat(6, auto)/repeat(6, 1fr);
+  grid-template-areas: "a a b b c c" "a a b b c c" "e e b b c c" "e e d d h h" "f f d d h h" "g g g g h h";
+}
+main .container-courses .mosaic .course {
+  padding: 5rem;
+  background: linear-gradient(to right, #ccbfb2, rgba(153, 197, 193, 0.9));
+}
+main .container-courses .mosaic .course:nth-child(1) {
+  grid-area: a;
+  background: url(/Images/775.jpeg);
   background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(2) {
+  grid-area: b;
+  background: url(/Images/abstract-geometric-shape-connection-with-3d-cubes-background_42705-105.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(3) {
+  grid-area: c;
+  background: url(/Images/Artificial-Intelligence-Pixabay.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(4) {
+  grid-area: d;
+  background: url(/Images/blockchain.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(5) {
+  grid-area: e;
+  background: url(/Images/computerprogramming.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(6) {
+  grid-area: f;
+  background: url(/Images/Crypto-e1589889697585.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(7) {
+  grid-area: g;
+  background: url(/Images/defi.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic .course:nth-child(8) {
+  grid-area: h;
+  background: url(/Images/retail-innovation-changing-tech-consumer-employee-demands-1024x440.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+main .container-courses .mosaic img {
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
