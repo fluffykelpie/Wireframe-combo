@@ -1,4 +1,4 @@
-@import 'reset', 'config';
+@import 'reset', 'config', 'mixins';
 
 #nav-menu {
 
@@ -16,21 +16,116 @@
         list-style: none;
 
         span {
-            color: 
+            color: $logo;
+            font-weight: 900;
+            text-decoration:underline;
         }
 
-        a {
-            text-decoration: none;
-            color: $letter;
-            cursor: pointer;
-        }
 
-        a:hover {
-            background-color: $hover-nav;
-            text-decoration: underline;
-            transition: 0.1s all ease;
-            padding: 1rem;
+        li {
+            @include flex(column,center, center);
+
+            a {
+                text-decoration: none;
+                color: $letter;
+                cursor: pointer;
+            }
+    
+            a:hover {
+                background-color: $hover-nav;
+                text-decoration: underline;
+                transition: 0.1s all ease;
+                padding: 1rem;
+            }
         }
-        
     }
+}
+
+main {
+
+    .homepage-image {
+        @include flex(column,center, center);
+        height: 40vh;
+        background: 
+        linear-gradient(
+            to right,
+            rgba($header-color, 1.5),
+            rgba($footer-color, 0.9)
+        );
+        
+        h1 {
+            color: $header-h1;
+        }
+    }
+
+    .video-container {
+        height: 40vh;
+
+        .images-video {
+            display: grid;
+            grid-template: auto / repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            h2 {
+                color: $header-h2;
+            }
+            .image-one, .image-two {
+                @include flex(column, center, center);
+                height: 100%;
+        
+                .play-button {
+                    color: $icon;
+                    font-size: 3rem;
+                    padding: 2rem;
+                }
+            }
+
+            .image-one {
+                background: $image-video1;
+            }
+
+            .image-two {
+                background:$image-video2;
+            }
+        }
+    }
+
+
+    .container-about {
+        height: 100vh;
+        display: grid;
+        grid-gap: 5px;
+        grid-template: auto / repeat(2, 1fr);
+
+        .who-are-we {
+            height: 100%;
+           
+            h3 {
+                text-transform: uppercase;
+                margin-left: 0.2rem;
+                padding: 1.5rem;
+            }
+        
+            .divider {
+                width: 8rem;
+                height: 0.40rem;
+                background: $span;
+                display: inline-block;
+                position: relative;
+                margin-left: 1rem;
+            }
+
+            #text-intro {
+                padding: 1rem;
+            }
+
+            .picture-about {
+                background-position: center;
+            }
+            
+        }
+    }
+
 }
