@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/_reset.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["sass/_reset.scss","sass/_config.scss","sass/main.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;;AAGJ;EACI,YCRe;EDSf;EACA;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AEpBJ;EAEI,YDFW;;ACIX;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAMA;EACI;EACA,ODdH;ECeG;;AAGJ;EACI,kBDhBA;ECiBA;EACA;EACA","file":"style.css"}

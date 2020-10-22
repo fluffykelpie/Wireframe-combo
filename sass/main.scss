@@ -1,2 +1,36 @@
 @import 'reset', 'config';
 
+#nav-menu {
+
+    background: $header-color;
+ 
+    ul {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        list-style: none;
+
+        span {
+            color: 
+        }
+
+        a {
+            text-decoration: none;
+            color: $letter;
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: $hover-nav;
+            text-decoration: underline;
+            transition: 0.1s all ease;
+            padding: 1rem;
+        }
+        
+    }
+}
