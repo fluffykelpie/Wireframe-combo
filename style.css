@@ -137,6 +137,7 @@ main .container-about .who-are-we .btn-bottom {
   padding: 10px 20px;
   color: black;
   width: 150px;
+  cursor: pointer;
 }
 main .container-about .picture-about {
   display: flex;
@@ -164,6 +165,7 @@ main .container-courses .mosaic {
   grid-gap: 2px;
   grid-template: repeat(6, auto)/repeat(6, 1fr);
   grid-template-areas: "a a b b c c" "a a b b c c" "e e b b c c" "e e d d h h" "f f d d h h" "g g g g h h";
+  width: 80%;
 }
 main .container-courses .mosaic .course {
   padding: 5rem;
@@ -220,6 +222,78 @@ main .container-courses .mosaic .course:nth-child(8) {
 main .container-courses .mosaic img {
   width: 100px;
   height: 100px;
+}
+main .container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+main .container-contact h2 {
+  color: #E6D7D1;
+  padding: 1rem;
+}
+main .container-contact h3 {
+  color: #D1E6E4;
+  padding: 1rem;
+}
+main .container-contact .btn-contact {
+  border: 2px solid #97acaa;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 10px 20px;
+  color: black;
+  width: 150px;
+  cursor: pointer;
+}
+
+footer {
+  background: #7C9996;
+  padding: 2rem;
+  display: grid;
+  grid-template: auto/auto;
+}
+footer #footer-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #footer-total .soc-med {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer-total .soc-med a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer #footer-total .cop-2020 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  list-style: none;
+}
+footer #footer-total .cop-2020 ul li, footer #footer-total .cop-2020 ul a {
+  color: #fff;
+  font-size: 11px;
+}
+footer #footer-total .cop-2020 ul li {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
