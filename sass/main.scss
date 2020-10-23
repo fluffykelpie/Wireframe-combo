@@ -141,6 +141,7 @@ main {
         }
         .picture-about {
             @include flex (column, center, center);
+            padding-top: 3rem;
 
             img{
                 width: 85%;

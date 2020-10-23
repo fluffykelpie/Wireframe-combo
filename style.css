@@ -144,6 +144,7 @@ main .container-about .picture-about {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 }
 main .container-about .picture-about img {
   width: 85%;
