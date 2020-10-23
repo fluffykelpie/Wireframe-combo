@@ -5,9 +5,109 @@
         transform: scale(0.3);
     }
 
-    to{
+    to {
         opacity: 1;
         filter: blur(0);
         transform: scale(1);
+    }
+}
+
+
+@keyframes buttons {
+    from {
+        opacity: 0;
+        filter: invert(100%);
+    }
+
+    to {
+        opacity: 1;
+        filter: invert(0);
+    }
+}
+
+@keyframes pulse {
+
+    0% {
+        color: $icon-anim;
+    }
+
+    100% {
+        color: $icon-animf;
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(.2);
+        color:$anime1;
+    }
+      
+    50% {
+        olor: $anime2;
+    }
+    
+    100% {
+        transform: scale(1);
+        color: $anime3;
+    }
+}
+
+@keyframes pulsating {
+    0%, 100% {
+      background-color: $circle-even;
+    }
+
+    50% {
+      background-color: $circle-oneven;
+    }
+}
+  
+@keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+}
+
+@keyframes team {
+
+    0% {
+        transform: scale(0.2);
+        filter: blur(2px);
+    }
+
+    25% {
+        transform: scale(0.4);
+    }
+
+    50% {
+        transform: scale(0.6);
+
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes social {
+    from {
+        color: $social;
+    }
+
+    to {
+        color: $social1;
     }
 }

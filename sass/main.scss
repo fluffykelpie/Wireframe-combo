@@ -19,6 +19,7 @@
             color: $logo;
             font-weight: 900;
             text-decoration:underline;
+            animation: logo 5s infinite
         }
 
 
@@ -56,6 +57,24 @@ main {
         h1 {
             color: $header-h1;
         }
+
+        .circle {
+            display: grid;
+            grid-gap: 5px;
+            grid-template: auto / repeat(8, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .circle-even, .circle-oneven {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            animation: 
+            pulsating 3s ease infinite alternate, 
+            nudge 5s linear infinite alternate;
+            }
+        }
     }
 
     .video-container {
@@ -79,6 +98,10 @@ main {
                     color: $icon;
                     font-size: 3rem;
                     padding: 2rem;
+
+                    i {
+                        animation: pulse 5s infinite;
+                    }
                 }
             }
 
@@ -136,16 +159,24 @@ main {
                 color: $letter;
                 width: 150px;
                 cursor: pointer;
+                animation: buttons 3s ease-in-out;
+            }
+
+            .btn-bottom:hover {
+                background-color: $hover-btn;
+                transition: 2s all ease;
+                border: none;
             }
 
         }
         .picture-about {
             @include flex (column, center, center);
             padding-top: 3rem;
-
+    
             img{
                 width: 85%;
                 height: auto;
+                animation: team 10s ease-in-out infinite;
             }
         }
     }
@@ -186,7 +217,7 @@ main {
                 background: url(/Images/775.jpeg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
             }
 
             .course:nth-child(2){
@@ -194,7 +225,7 @@ main {
                 background: url(/Images/abstract-geometric-shape-connection-with-3d-cubes-background_42705-105.jpg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(2 * #{$time});
             }
 
@@ -203,7 +234,7 @@ main {
                 background: url(/Images/Artificial-Intelligence-Pixabay.jpg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(3 * #{$time});
             }
 
@@ -212,7 +243,7 @@ main {
                 background: url(/Images/blockchain.jpg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(4 * #{$time});
             }
 
@@ -221,7 +252,7 @@ main {
                 background: url(/Images/computerprogramming.jpeg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(5 * #{$time});
             }
 
@@ -230,7 +261,7 @@ main {
                 background: url(/Images/Crypto-e1589889697585.jpg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(6 * #{$time});
             }
 
@@ -239,7 +270,7 @@ main {
                 background: url(/Images/defi.jpeg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(7 * #{$time});
             }
 
@@ -248,7 +279,7 @@ main {
                 background: url(/Images/retail-innovation-changing-tech-consumer-employee-demands-1024x440.jpeg);
                 background-position: center;
                 background-size: cover;
-                animation: courses 3s ease-in-out backwards;
+                animation: courses 3s ease-in-out infinite;
                 animation-delay: calc(8 * #{$time});
             }
           
@@ -284,6 +315,13 @@ main {
             color: black;
             width: 150px;
             cursor: pointer;
+            animation: buttons 3s ease-in-out;
+        }
+
+        .btn-contact:hover{
+            background-color: $hover-btn;
+            transition: 0.1s all ease;
+            border: none;
         }
     }
 }
@@ -311,6 +349,7 @@ footer {
                 font-size: 2rem;
                 text-decoration: none;
                 cursor: pointer;
+                animation: social 3s ease-in-out infinite,
             }
         }
 
@@ -332,4 +371,5 @@ footer {
             }
         }
     }
+
 }
