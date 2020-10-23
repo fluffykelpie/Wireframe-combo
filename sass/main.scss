@@ -1,4 +1,4 @@
-@import 'reset', 'config', 'mixins';
+@import 'reset', 'config', 'mixins', 'animations', 'variables';
 
 #nav-menu {
 
@@ -186,6 +186,7 @@ main {
                 background: url(/Images/775.jpeg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
             }
 
             .course:nth-child(2){
@@ -193,6 +194,8 @@ main {
                 background: url(/Images/abstract-geometric-shape-connection-with-3d-cubes-background_42705-105.jpg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(2 * #{$time});
             }
 
             .course:nth-child(3){
@@ -200,6 +203,8 @@ main {
                 background: url(/Images/Artificial-Intelligence-Pixabay.jpg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(3 * #{$time});
             }
 
             .course:nth-child(4){
@@ -207,6 +212,8 @@ main {
                 background: url(/Images/blockchain.jpg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(4 * #{$time});
             }
 
             .course:nth-child(5){
@@ -214,6 +221,8 @@ main {
                 background: url(/Images/computerprogramming.jpeg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(5 * #{$time});
             }
 
             .course:nth-child(6){
@@ -221,6 +230,8 @@ main {
                 background: url(/Images/Crypto-e1589889697585.jpg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(6 * #{$time});
             }
 
             .course:nth-child(7){
@@ -228,6 +239,8 @@ main {
                 background: url(/Images/defi.jpeg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(7 * #{$time});
             }
 
             .course:nth-child(8){
@@ -235,6 +248,8 @@ main {
                 background: url(/Images/retail-innovation-changing-tech-consumer-employee-demands-1024x440.jpeg);
                 background-position: center;
                 background-size: cover;
+                animation: courses 3s ease-in-out backwards;
+                animation-delay: calc(8 * #{$time});
             }
           
 
